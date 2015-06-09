@@ -1,0 +1,206 @@
+26 91
+{ 81
+} 82
+[ 79
+] 80
+( 77
+) 78
+int 3
+id 40
+digit 41
+= 64
++ 42
+- 43
+< 50
+> 49
+== 54
+!= 53
+* 44
+/ 45
+, 75
+string 87
+for 22
+if 30
+else 6
+return 15
+； 76
+$ 90
+{	}	[	]	(	)	int	id	digit	=	+	-	<	>	==	!=	*	/	,	string	for	if	else	return	；	$	<程序>	<函数定义>	<类型>	<变量>	<参数声明>	<函数块>	<因式>	<表达式>	<因子>	<运算符>	<声明>	<赋初值>	<声明闭包>	<声明语句闭包>	<函数块闭包>	<赋值函数>	<循环for>	<条件语句>	<函数返回>	<参数列表>	<参数闭包>	<参数>	<否则语句>
+0	 	 	 	 	 	 	shift 4	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	1	2	3	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+1	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	accept	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+2	 	 	 	 	 	 	shift 4	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <程序> -> <函数定义>	5	2	3	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+3	 	 	 	 	 	 	 	shift 7	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	6	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+4	 	 	 	 	 	 	 	reduce <类型> -> int	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+5	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <程序> -> <函数定义> <程序>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+6	 	 	 	 	shift 8	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+7	 	 	shift 9	 	reduce <变量> -> id	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+8	 	 	 	 	 	reduce <参数声明> -> ε	shift 4	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	10	 	11	 	 	 	 	 	12	 	 	 	 	 	 	 	 	 	 	 	 
+9	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	15	16	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+10	 	 	 	 	 	 	 	shift 21	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	20	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+11	 	 	 	 	 	shift 22	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+12	 	 	 	 	 	reduce <声明闭包> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	shift 24	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	23	 	 	 	 	 	 	 	 	 	 
+13	 	 	 	reduce <因式> -> <变量>	 	 	 	 	 	 	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+14	 	 	 	reduce <因子> -> <因式>	 	 	 	 	 	 	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	shift 25	shift 26	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+15	 	 	 	shift 27	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+16	 	 	 	reduce <表达式> -> <因子>	 	 	 	 	 	 	shift 29	shift 30	shift 31	shift 32	shift 33	shift 34	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	28	 	 	 	 	 	 	 	 	 	 	 	 	 
+17	 	 	 	 	shift 39	 	 	shift 40	shift 41	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	35	 	 	36	37	38	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+18	 	 	shift 42	reduce <变量> -> id	 	 	 	 	 	 	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+19	 	 	 	reduce <因式> -> digit	 	 	 	 	 	 	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+20	 	 	 	 	 	reduce <赋初值> -> ε	 	 	 	shift 44	 	 	 	 	 	 	 	 	reduce <赋初值> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	43	 	 	 	 	 	 	 	 	 	 	 
+21	 	 	shift 45	 	 	reduce <变量> -> id	 	 	 	reduce <变量> -> id	 	 	 	 	 	 	 	 	reduce <变量> -> id	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+22	shift 46	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+23	 	 	 	 	 	reduce <参数声明> -> <声明> <声明闭包>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+24	 	 	 	 	 	 	shift 4	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	10	 	 	 	 	 	 	 	47	 	 	 	 	 	 	 	 	 	 	 	 
+25	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	 	48	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+26	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	 	49	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+27	 	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+28	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	50	16	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+29	 	 	 	 	reduce <运算符> -> +	 	 	reduce <运算符> -> +	reduce <运算符> -> +	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+30	 	 	 	 	reduce <运算符> -> -	 	 	reduce <运算符> -> -	reduce <运算符> -> -	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+31	 	 	 	 	reduce <运算符> -> <	 	 	reduce <运算符> -> <	reduce <运算符> -> <	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+32	 	 	 	 	reduce <运算符> -> >	 	 	reduce <运算符> -> >	reduce <运算符> -> >	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+33	 	 	 	 	reduce <运算符> -> ==	 	 	reduce <运算符> -> ==	reduce <运算符> -> ==	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+34	 	 	 	 	reduce <运算符> -> !=	 	 	reduce <运算符> -> !=	reduce <运算符> -> !=	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+35	 	 	 	 	 	reduce <因式> -> <变量>	 	 	 	 	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+36	 	 	 	 	 	reduce <因子> -> <因式>	 	 	 	 	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	shift 51	shift 52	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+37	 	 	 	 	 	shift 53	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+38	 	 	 	 	 	reduce <表达式> -> <因子>	 	 	 	 	shift 29	shift 30	shift 31	shift 32	shift 33	shift 34	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	54	 	 	 	 	 	 	 	 	 	 	 	 	 
+39	 	 	 	 	shift 39	 	 	shift 40	shift 41	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	35	 	 	36	55	38	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+40	 	 	shift 56	 	 	reduce <变量> -> id	 	 	 	 	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+41	 	 	 	 	 	reduce <因式> -> digit	 	 	 	 	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+42	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	57	16	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+43	 	 	 	 	 	reduce <声明> -> <类型> <变量> <赋初值>	 	 	 	 	 	 	 	 	 	 	 	 	reduce <声明> -> <类型> <变量> <赋初值>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+44	 	 	 	 	shift 62	 	 	shift 63	shift 64	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	58	 	 	59	60	61	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+45	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	65	16	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+46	 	reduce <声明语句闭包> -> ε	 	 	 	 	shift 4	reduce <声明语句闭包> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	reduce <声明语句闭包> -> ε	reduce <声明语句闭包> -> ε	 	reduce <声明语句闭包> -> ε	 	 	 	 	66	 	 	67	 	 	 	 	68	 	 	69	 	 	 	 	 	 	 	 	 
+47	 	 	 	 	 	reduce <声明闭包> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	shift 24	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	70	 	 	 	 	 	 	 	 	 	 
+48	 	 	 	reduce <因子> -> <因式> * <因子>	 	 	 	 	 	 	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+49	 	 	 	reduce <因子> -> <因式> / <因子>	 	 	 	 	 	 	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+50	 	 	 	reduce <表达式> -> <因子> <运算符> <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+51	 	 	 	 	shift 39	 	 	shift 40	shift 41	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	35	 	 	36	 	71	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+52	 	 	 	 	shift 39	 	 	shift 40	shift 41	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	35	 	 	36	 	72	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+53	 	 	 	reduce <因式> -> ( <表达式> )	 	 	 	 	 	 	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+54	 	 	 	 	shift 39	 	 	shift 40	shift 41	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	35	 	 	36	73	38	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+55	 	 	 	 	 	shift 74	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+56	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	75	16	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+57	 	 	 	shift 76	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+58	 	 	 	 	 	reduce <因式> -> <变量>	 	 	 	 	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+59	 	 	 	 	 	reduce <因子> -> <因式>	 	 	 	 	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	shift 77	shift 78	reduce <因子> -> <因式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+60	 	 	 	 	 	reduce <赋初值> -> = <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	reduce <赋初值> -> = <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+61	 	 	 	 	 	reduce <表达式> -> <因子>	 	 	 	 	shift 29	shift 30	shift 31	shift 32	shift 33	shift 34	 	 	reduce <表达式> -> <因子>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	79	 	 	 	 	 	 	 	 	 	 	 	 	 
+62	 	 	 	 	shift 39	 	 	shift 40	shift 41	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	35	 	 	36	80	38	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+63	 	 	shift 81	 	 	reduce <变量> -> id	 	 	 	 	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+64	 	 	 	 	 	reduce <因式> -> digit	 	 	 	 	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+65	 	 	 	shift 82	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+66	 	 	 	 	 	 	 	shift 84	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	83	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+67	 	shift 85	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+68	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	shift 86	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+69	 	reduce <函数块闭包> -> ε	 	 	 	 	 	shift 93	 	 	 	 	 	 	 	 	 	 	 	 	shift 94	shift 95	 	shift 96	 	 	 	 	 	87	 	 	 	 	 	 	 	 	 	 	88	89	90	91	92	 	 	 	 
+70	 	 	 	 	 	reduce <声明闭包> -> , <声明> <声明闭包>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+71	 	 	 	 	 	reduce <因子> -> <因式> * <因子>	 	 	 	 	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+72	 	 	 	 	 	reduce <因子> -> <因式> / <因子>	 	 	 	 	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+73	 	 	 	 	 	reduce <表达式> -> <因子> <运算符> <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+74	 	 	 	 	 	reduce <因式> -> ( <表达式> )	 	 	 	 	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+75	 	 	 	shift 97	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+76	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+77	 	 	 	 	shift 62	 	 	shift 63	shift 64	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	58	 	 	59	 	98	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+78	 	 	 	 	shift 62	 	 	shift 63	shift 64	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	58	 	 	59	 	99	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+79	 	 	 	 	shift 62	 	 	shift 63	shift 64	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	58	 	 	59	100	61	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+80	 	 	 	 	 	shift 101	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+81	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	102	16	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+82	 	 	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+83	 	 	 	 	 	 	 	 	 	shift 104	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <赋初值> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	103	 	 	 	 	 	 	 	 	 	 	 
+84	 	 	shift 105	 	 	 	 	 	 	reduce <变量> -> id	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <变量> -> id	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+85	 	 	 	 	 	 	reduce <函数定义> -> <类型> <变量> ( <参数声明> ) { <函数块> }	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <函数定义> -> <类型> <变量> ( <参数声明> ) { <函数块> }	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+86	 	reduce <声明语句闭包> -> ε	 	 	 	 	shift 4	reduce <声明语句闭包> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	reduce <声明语句闭包> -> ε	reduce <声明语句闭包> -> ε	 	reduce <声明语句闭包> -> ε	 	 	 	 	66	 	 	 	 	 	 	 	68	 	 	106	 	 	 	 	 	 	 	 	 
+87	 	 	 	 	shift 107	 	 	 	 	shift 108	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+88	 	reduce <函数块> -> <声明语句闭包> <函数块闭包>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+89	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	shift 109	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+90	 	reduce <函数块闭包> -> ε	 	 	 	 	 	shift 93	 	 	 	 	 	 	 	 	 	 	 	 	shift 94	shift 95	 	shift 96	 	 	 	 	 	87	 	 	 	 	 	 	 	 	 	 	110	89	90	91	92	 	 	 	 
+91	 	reduce <函数块闭包> -> ε	 	 	 	 	 	shift 93	 	 	 	 	 	 	 	 	 	 	 	 	shift 94	shift 95	 	shift 96	 	 	 	 	 	87	 	 	 	 	 	 	 	 	 	 	111	89	90	91	92	 	 	 	 
+92	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	shift 112	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+93	 	 	shift 113	 	reduce <变量> -> id	 	 	 	 	reduce <变量> -> id	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+94	 	 	 	 	shift 114	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+95	 	 	 	 	shift 115	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+96	 	 	 	 	shift 120	 	 	shift 121	shift 122	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	116	 	 	117	118	119	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+97	 	 	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+98	 	 	 	 	 	reduce <因子> -> <因式> * <因子>	 	 	 	 	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	 	 	reduce <因子> -> <因式> * <因子>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+99	 	 	 	 	 	reduce <因子> -> <因式> / <因子>	 	 	 	 	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	 	 	reduce <因子> -> <因式> / <因子>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+100	 	 	 	 	 	reduce <表达式> -> <因子> <运算符> <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	reduce <表达式> -> <因子> <运算符> <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+101	 	 	 	 	 	reduce <因式> -> ( <表达式> )	 	 	 	 	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+102	 	 	 	shift 123	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+103	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <声明> -> <类型> <变量> <赋初值>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+104	 	 	 	 	shift 120	 	 	shift 121	shift 122	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	116	 	 	117	124	119	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+105	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	125	16	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+106	 	reduce <声明语句闭包> -> <声明> ； <声明语句闭包>	 	 	 	 	 	reduce <声明语句闭包> -> <声明> ； <声明语句闭包>	 	 	 	 	 	 	 	 	 	 	 	 	reduce <声明语句闭包> -> <声明> ； <声明语句闭包>	reduce <声明语句闭包> -> <声明> ； <声明语句闭包>	 	reduce <声明语句闭包> -> <声明> ； <声明语句闭包>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+107	 	 	 	 	 	 	 	shift 128	shift 129	 	 	 	 	 	 	 	 	 	 	shift 130	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	126	 	127	 
+108	 	 	 	 	shift 120	 	 	shift 121	shift 122	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	116	 	 	117	131	119	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+109	 	reduce <函数块闭包> -> ε	 	 	 	 	 	shift 93	 	 	 	 	 	 	 	 	 	 	 	 	shift 94	shift 95	 	shift 96	 	 	 	 	 	87	 	 	 	 	 	 	 	 	 	 	132	89	90	91	92	 	 	 	 
+110	 	reduce <函数块闭包> -> <循环for> <函数块闭包>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+111	 	reduce <函数块闭包> -> <条件语句> <函数块闭包>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+112	 	reduce <函数块闭包> -> ε	 	 	 	 	 	shift 93	 	 	 	 	 	 	 	 	 	 	 	 	shift 94	shift 95	 	shift 96	 	 	 	 	 	87	 	 	 	 	 	 	 	 	 	 	133	89	90	91	92	 	 	 	 
+113	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	134	16	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+114	 	 	 	 	 	 	 	shift 93	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	87	 	 	 	 	 	 	 	 	 	 	 	135	 	 	 	 	 	 	 
+115	 	 	 	 	shift 39	 	 	shift 40	shift 41	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	35	 	 	36	136	38	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+116	 	 	 	 	 	 	 	 	 	 	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	reduce <因式> -> <变量>	 	 	 	 	 	 	reduce <因式> -> <变量>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+117	 	 	 	 	 	 	 	 	 	 	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	reduce <因子> -> <因式>	shift 137	shift 138	 	 	 	 	 	 	reduce <因子> -> <因式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+118	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <函数返回> -> return <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+119	 	 	 	 	 	 	 	 	 	 	shift 29	shift 30	shift 31	shift 32	shift 33	shift 34	 	 	 	 	 	 	 	 	reduce <表达式> -> <因子>	 	 	 	 	 	 	 	 	 	 	139	 	 	 	 	 	 	 	 	 	 	 	 	 
+120	 	 	 	 	shift 39	 	 	shift 40	shift 41	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	35	 	 	36	140	38	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+121	 	 	shift 141	 	 	 	 	 	 	 	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	reduce <变量> -> id	 	 	 	 	 	 	reduce <变量> -> id	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+122	 	 	 	 	 	 	 	 	 	 	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	reduce <因式> -> digit	 	 	 	 	 	 	reduce <因式> -> digit	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+123	 	 	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+124	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <赋初值> -> = <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+125	 	 	 	shift 142	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+126	 	 	 	 	 	shift 143	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+127	 	 	 	 	 	reduce <参数闭包> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	shift 145	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	144	 	 
+128	 	 	 	 	 	reduce <参数> -> id	 	 	 	 	 	 	 	 	 	 	 	 	reduce <参数> -> id	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+129	 	 	 	 	 	reduce <参数> -> digit	 	 	 	 	 	 	 	 	 	 	 	 	reduce <参数> -> digit	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+130	 	 	 	 	 	reduce <参数> -> string	 	 	 	 	 	 	 	 	 	 	 	 	reduce <参数> -> string	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+131	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <赋值函数> -> <变量> = <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+132	 	reduce <函数块闭包> -> <赋值函数> ； <函数块闭包>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+133	 	reduce <函数块闭包> -> <函数返回> ； <函数块闭包>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+134	 	 	 	shift 146	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+135	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	shift 147	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+136	 	 	 	 	 	shift 148	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+137	 	 	 	 	shift 120	 	 	shift 121	shift 122	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	116	 	 	117	 	149	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+138	 	 	 	 	shift 120	 	 	shift 121	shift 122	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	116	 	 	117	 	150	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+139	 	 	 	 	shift 120	 	 	shift 121	shift 122	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	116	 	 	117	151	119	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+140	 	 	 	 	 	shift 152	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+141	 	 	 	 	shift 17	 	 	shift 18	shift 19	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	13	 	 	14	153	16	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+142	 	 	 	 	 	 	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+143	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <赋值函数> -> <变量> ( <参数列表> )	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+144	 	 	 	 	 	reduce <参数列表> -> <参数> <参数闭包>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+145	 	 	 	 	 	 	 	shift 128	shift 129	 	 	 	 	 	 	 	 	 	 	shift 130	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	154	 
+146	 	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+147	 	 	 	 	shift 120	 	 	shift 121	shift 122	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	116	 	 	117	155	119	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+148	shift 156	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+149	 	 	 	 	 	 	 	 	 	 	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	reduce <因子> -> <因式> * <因子>	 	 	 	 	 	 	 	 	reduce <因子> -> <因式> * <因子>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+150	 	 	 	 	 	 	 	 	 	 	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	reduce <因子> -> <因式> / <因子>	 	 	 	 	 	 	 	 	reduce <因子> -> <因式> / <因子>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+151	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	reduce <表达式> -> <因子> <运算符> <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+152	 	 	 	 	 	 	 	 	 	 	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	reduce <因式> -> ( <表达式> )	 	 	 	 	 	 	reduce <因式> -> ( <表达式> )	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+153	 	 	 	shift 157	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+154	 	 	 	 	 	reduce <参数闭包> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	shift 145	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	158	 	 
+155	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	shift 159	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+156	 	reduce <声明语句闭包> -> ε	 	 	 	 	shift 4	reduce <声明语句闭包> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	reduce <声明语句闭包> -> ε	reduce <声明语句闭包> -> ε	 	reduce <声明语句闭包> -> ε	 	 	 	 	66	 	 	160	 	 	 	 	68	 	 	69	 	 	 	 	 	 	 	 	 
+157	 	 	 	 	 	 	 	 	 	 	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	reduce <变量> -> id [ <表达式> ]	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+158	 	 	 	 	 	reduce <参数闭包> -> , <参数> <参数闭包>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+159	 	 	 	 	 	 	 	shift 93	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	161	 	 	 	 	 	 	 	 	 	 	 	162	 	 	 	 	 	 	 
+160	 	shift 163	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+161	 	 	 	 	shift 164	 	 	 	 	shift 165	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+162	 	 	 	 	 	shift 166	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+163	 	reduce <否则语句> -> ε	 	 	 	 	 	reduce <否则语句> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	reduce <否则语句> -> ε	reduce <否则语句> -> ε	shift 168	reduce <否则语句> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	167
+164	 	 	 	 	 	 	 	shift 128	shift 129	 	 	 	 	 	 	 	 	 	 	shift 130	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	169	 	127	 
+165	 	 	 	 	shift 39	 	 	shift 40	shift 41	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	35	 	 	36	170	38	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+166	shift 171	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+167	 	reduce <条件语句> -> if ( <表达式> ) { <函数块> } <否则语句>	 	 	 	 	 	reduce <条件语句> -> if ( <表达式> ) { <函数块> } <否则语句>	 	 	 	 	 	 	 	 	 	 	 	 	reduce <条件语句> -> if ( <表达式> ) { <函数块> } <否则语句>	reduce <条件语句> -> if ( <表达式> ) { <函数块> } <否则语句>	 	reduce <条件语句> -> if ( <表达式> ) { <函数块> } <否则语句>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+168	shift 172	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+169	 	 	 	 	 	shift 173	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+170	 	 	 	 	 	reduce <赋值函数> -> <变量> = <表达式>	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+171	 	reduce <函数块闭包> -> ε	 	 	 	 	 	shift 93	 	 	 	 	 	 	 	 	 	 	 	 	shift 94	shift 95	 	shift 96	 	 	 	 	 	87	 	 	 	 	 	 	 	 	 	 	174	89	90	91	92	 	 	 	 
+172	 	reduce <声明语句闭包> -> ε	 	 	 	 	shift 4	reduce <声明语句闭包> -> ε	 	 	 	 	 	 	 	 	 	 	 	 	reduce <声明语句闭包> -> ε	reduce <声明语句闭包> -> ε	 	reduce <声明语句闭包> -> ε	 	 	 	 	66	 	 	175	 	 	 	 	68	 	 	69	 	 	 	 	 	 	 	 	 
+173	 	 	 	 	 	reduce <赋值函数> -> <变量> ( <参数列表> )	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+174	 	shift 176	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+175	 	shift 177	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+176	 	reduce <循环for> -> for ( <赋值函数> ； <表达式> ； <赋值函数> ) { <函数块闭包> }	 	 	 	 	 	reduce <循环for> -> for ( <赋值函数> ； <表达式> ； <赋值函数> ) { <函数块闭包> }	 	 	 	 	 	 	 	 	 	 	 	 	reduce <循环for> -> for ( <赋值函数> ； <表达式> ； <赋值函数> ) { <函数块闭包> }	reduce <循环for> -> for ( <赋值函数> ； <表达式> ； <赋值函数> ) { <函数块闭包> }	 	reduce <循环for> -> for ( <赋值函数> ； <表达式> ； <赋值函数> ) { <函数块闭包> }	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
+177	 	reduce <否则语句> -> else { <函数块> }	 	 	 	 	 	reduce <否则语句> -> else { <函数块> }	 	 	 	 	 	 	 	 	 	 	 	 	reduce <否则语句> -> else { <函数块> }	reduce <否则语句> -> else { <函数块> }	 	reduce <否则语句> -> else { <函数块> }	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 	 
